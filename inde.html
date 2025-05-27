@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo app</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
     <div class="container">
@@ -17,17 +17,19 @@
                 </div>
             </div>
             <div class="status-numbers">
-                <p id="number">2/3</p>
+                <p id="number">0/0</p>
             </div>
         </div>
 
-        <form action="">
-            <input type="text" id="taskInput" placeholder="Write your task">
+        <form>
+            <input type="text" id="taskInput" placeholder="Write your task" />
             <button id="NewTask" type="submit">+</button>
         </form>
-        <ul class="task-list"></ul>
+
+        <ul id="task-list" class="task-list"></ul>
     </div>
 
     <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
